@@ -1,0 +1,124 @@
+/*=============== General and Recurring Styles ===============*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 100vw;
+  font-size: 100%;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1.57rem;
+}
+
+section {
+  padding: 3rem;
+  min-height: 23rem;
+}
+
+section:nth-of-type(1) {
+  background-color: #e38826;
+}
+
+section:nth-of-type(1) .btn {
+  color: #e38826;
+}
+
+section:nth-of-type(1) .btn:hover, section:nth-of-type(1) .btn:focus {
+  background-color: #e38826;
+}
+
+section:nth-of-type(2) {
+  background-color: #006970;
+}
+
+section:nth-of-type(2) .btn {
+  color: #006970;
+}
+
+section:nth-of-type(2) .btn:hover, section:nth-of-type(2) .btn:focus {
+  background-color: #006970;
+}
+
+section:nth-of-type(3) {
+  background-color: #004241;
+}
+
+section:nth-of-type(3) .btn {
+  color: #004241;
+}
+
+section:nth-of-type(3) .btn:hover, section:nth-of-type(3) .btn:focus {
+  background-color: #004241;
+}
+
+section h1,
+section p {
+  padding-bottom: 5rem;
+}
+
+/*======= Typography =======*/
+p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+h1,
+h2,
+h3 {
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+/*======= Buttons =======*/
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 1.8rem;
+  -webkit-border-radius: 1.8rem;
+  -moz-border-radius: 1.8rem;
+  -ms-border-radius: 1.8rem;
+  -o-border-radius: 1.8rem;
+  text-decoration: none;
+}
+
+.btn-default {
+  background-color: #f2f2f2;
+}
+
+.btn-default:hover, .btn-default:focus {
+  border: 2px solid #f2f2f2;
+}
+
+a.btn-default:hover, a.btn-default:focus {
+  color: #fff;
+}
+
+/*=============== Footer ===============*/
+footer p {
+  color: #004241;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*=============== Media Queries ===============*/
+@media screen and (max-width: 920px) {
+  main {
+    display: block;
+  }
+}

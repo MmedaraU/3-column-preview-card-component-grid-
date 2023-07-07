@@ -1,0 +1,139 @@
+// Variables -- Colors
+$card--orange: hsl(31, 77%, 52%);
+$card--darkCyan: hsl(184, 100%, 22%);
+$card--darkerCyan: hsl(179, 100%, 13%);
+$text--white: hsla(0, 0%, 100%, 0.75);
+$bg--gray: hsl(0, 0%, 95%);
+$heading--gray: hsl(0, 0%, 95%);
+$btn--gray: hsl(0, 0%, 95%);
+
+/*=============== General and Recurring Styles ===============*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg--gray;
+  color: $text--white;
+  max-width: 100vw;
+  font-size: 100%;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1.57rem;
+}
+
+section {
+  padding: 3rem;
+  min-height: 23rem;
+
+  &:nth-of-type(1) {
+    background-color: $card--orange;
+
+    .btn {
+      color: $card--orange;
+
+      &:hover,
+      &:focus {
+        background-color: $card--orange;
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    background-color: $card--darkCyan;
+
+    .btn {
+      color: $card--darkCyan;
+
+      &:hover,
+      &:focus {
+        background-color: $card--darkCyan;
+      }
+    }
+  }
+
+  &:nth-of-type(3) {
+    background-color: $card--darkerCyan;
+
+    .btn {
+      color: $card--darkerCyan;
+
+      &:hover,
+      &:focus {
+        background-color: $card--darkerCyan;
+      }
+    }
+  }
+
+  h1,
+  p {
+    padding-bottom: 5rem;
+  }
+}
+
+/*======= Typography =======*/
+p {
+  color: $text--white;
+}
+
+h1,
+h2,
+h3 {
+  color: $heading--gray;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+/*======= Buttons =======*/
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 1.8rem;
+  -webkit-border-radius: 1.8rem;
+  -moz-border-radius: 1.8rem;
+  -ms-border-radius: 1.8rem;
+  -o-border-radius: 1.8rem;
+  text-decoration: none;
+}
+
+.btn-default {
+  background-color: $btn--gray;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $btn--gray;
+  }
+}
+
+a.btn-default:hover, a.btn-default:focus {
+  color: #fff;
+}
+
+/*=============== Footer ===============*/
+footer {
+  p {
+    color: $card--darkerCyan;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+/*=============== Media Queries ===============*/
+@media screen and (max-width: 920px) {
+  main {
+    display: block;
+  }
+}
