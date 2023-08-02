@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/MmedaraU/3-column-preview-card-component-with-grid)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://github.com/MmedaraU/3-column-preview-card-component-grid-)
+- [Live Site URL](https://mmedarau.github.io/3-column-preview-card-component-grid-/)
 
 ## My process
 Re-did the project with Grid. I kept most of the styles from when I did the project with Flexbox but the layout is handled with Grid. Sadly, it took me some days to figure out how to center with Grid and I got to understand that I didn't completely learn how to use Grid but I'm happy I tried it out.
